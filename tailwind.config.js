@@ -22,6 +22,9 @@ module.exports = {
     container: {
       center: true,
       padding: '1.5rem'
+    },
+    animation: {
+      'bounce-slow': 'bounce 3s infinite'
     }
   },
   plugins: [],

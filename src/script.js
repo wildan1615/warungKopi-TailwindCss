@@ -25,6 +25,18 @@ function linkAction() {
 
 navLink.forEach(link => link.addEventListener('click', linkAction));
 
+/*=============== NAVBAR FIXED ===============*/
+window.onscroll = function() {
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
+
+    if(window.pageYOffset > fixedNav) {
+        header.classList.add('navbar-fixed');
+    } else {
+        header.classList.remove('navbar-fixed');
+    }
+}
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
 
