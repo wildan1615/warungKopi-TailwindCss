@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply font-lato text-base text-secondary bg-[#f7f7f8];
+    }
+
+    section {
+        @apply pt-[4.5rem] pl-0 pr-0 pb-8;
+    }
+
+    h1,h2,h3 {
+        @apply text-primary font-bold;
+    }
+
+    h1,h2,h3,p {
+        @apply leading-[140%];
+    }
+
+    ul {
+        @apply list-none;
+    }
+
+    a {
+        @apply no-underline;
+    }
+
+    img {
+        @apply max-w-full h-auto;
+    }
+}
+
+@layer components {
+    button {
+        @apply border-none outline-none cursor-pointer;
+    }
+}
+
+/* * {
+    @apply border border-solid border-red-600;
+} */
+
+.section-title {
+    position: relative;
+    font-size: 1.5rem;
+    padding-left: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 3px;
+    height: 20px;
+    background-color: gold;
+}
+
+/* navbar */
+.nav-item {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+nav .show-menu {
+    right: 0;
+}

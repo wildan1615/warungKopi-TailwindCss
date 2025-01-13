@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "twrun": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
