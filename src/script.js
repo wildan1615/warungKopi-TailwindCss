@@ -41,7 +41,7 @@ window.onscroll = function() {
 
 
 /*=============== MIXITUP FILTER PRODUCTS ===============*/
-var mixerProducts = mixitup(".products-content", {
+let mixerProducts = mixitup(".products-content", {
     selectors: {
         target: '.products-card'
     },
