@@ -139,3 +139,13 @@ nav .show-menu {
 .active-product .product-title {
     color: black;
 }
+
+/* show scroll up */
+.scroll-up {
+    bottom: 3rem;
+}
+
+/* active link */
+.active-link {
+    font-weight: 900;
+}

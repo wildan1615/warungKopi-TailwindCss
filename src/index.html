@@ -28,13 +28,13 @@
                 <a href="#" class="text-white flex items-center gap-1 font-bold text-2xl">
                     <img src="img/logo.png" alt="logo-img" class="w-4">Tumbas
                 </a>
-                <div class="fixed sm:static bg-tumbas top-0 -right-[100%] w-full sm:w-1/2 h-full sm:h-1/2 transition-all duration-[.3s] sm:right-0 sm:bg-transparent" id="nav-menu">
+                <div class="nav-menu fixed sm:static bg-tumbas top-0 -right-[100%] w-full sm:w-1/2 h-full sm:h-1/2 transition-all duration-[.3s] sm:right-0 sm:bg-transparent" id="nav-menu">
                     <a href="#" class="absolute text-white flex items-center gap-2 font-extrabold text-3xl top-4 left-4 sm:hidden">
                         <img src="img/logo.png" alt="logo-img">Tumbas
                     </a>
                     <ul class="nav-list flex flex-col sm:flex-row sm:justify-evenly sm:items-center gap-y-12 pt-[9rem] sm:pt-0 pl-4 sm:w-auto sm:gap-x-4">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link sm:text-sm">Home</a>
+                            <a href="#home" class="nav-link sm:text-sm active-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#products" class="nav-link sm:text-sm">Products</a>
@@ -373,13 +373,52 @@
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            
+        <footer class="footer bg-black pt-[4rem] pb-[2.5rem]">
+            <div class="container footer-container">
+                <a href="#" class="text-white flex items-center gap-1 font-bold text-2xl mb-8">
+                    <img src="img/logo.png" alt="logo-img" class="w-4">Tumbas
+                </a>
+                <div class="grid footer-content gap-y-10 pb-10 border-b-[1px] border-secondary">
+                    <div class="footer-data">
+                        <p class="footer-desc mb-3">Subscribe to our newsletter</p>
+                        <div class="footer-newsletter flex gap-x-2">
+                            <input type="email" class="footer-input py-5 px-4 rounded-md w-[70%] text-primary outline-none" placeholder="Your Email Address">
+                            <button class="footer-btn bg-tumbas group">
+                                <i class='bx bx-right-arrow-alt group-hover:translate-x-1 text-3xl duration-[.4s]'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer-data">
+                        <h2 class="footer-subtitle text-white text-xl mb-3">Address</h2>
+                        <p class="footer-info">Bandung, Jawa Barat</p>
+                    </div>
+                    <div class="footer-data">
+                        <h2 class="footer-subtitle text-white text-xl mb-3">Contact</h2>
+                        <p class="footer-info">+987654321 <br>
+                            warkoptumbas@email.com</p>
+                    </div>
+                    <div class="footer-data">
+                        <h2 class="footer-subtitle text-white text-xl mb-3">Office</h2>
+                        <p class="footer-info">Monday - Saturday <br>
+                            9AM - 10PM</p>
+                    </div>
+                </div>
+                <div class="footer-group flex flex-col text-center mt-6">
+                    <ul class="footer-social flex justify-center gap-x-4 mb-2 text-2xl">
+                        <a href="https://www.facebook.com/" class="footer-social-link text-white hover:text-gold duration-[.4s]" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                        <a href="https://www.instagram.com/" class="footer-social-link text-white hover:text-gold duration-[.4s]" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://twitter.com/" class="footer-social-link text-white hover:text-gold duration-[.4s]" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    </ul>
+                    <span class="footer-copy">&#169; Made With Tailwindcss. All rigths reserved</span>
+                </div>
+            </div>
         </footer>
 
 
         <!--========== SCROLL UP ==========-->
-        
+        <a href="#" class="fixed bg-gold text-white text-xl right-4 -bottom-[30%] shadow-2xl inline-flex p-2 rounded-sm opacity-90 duration-[.4s] hover:-translate-y-1 hover:opacity-100" id="scroll_up">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
 
         <!--=============== MIXITUP FILTER ===============-->
         <script src="mixitup.min.js"></script>
