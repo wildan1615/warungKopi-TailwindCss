@@ -1835,6 +1835,11 @@ nav .show-menu {
          column-gap: 1.5rem;
   }
 
+  .xl\:gap-x-9 {
+    -moz-column-gap: 2.25rem;
+         column-gap: 2.25rem;
+  }
+
   .xl\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1908,6 +1913,11 @@ nav .show-menu {
     margin-bottom: auto;
   }
 
+  .\32xl\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .\32xl\:w-1\/2 {
     width: 50%;
   }
@@ -1930,6 +1940,11 @@ nav .show-menu {
 
   .\32xl\:items-center {
     align-items: center;
+  }
+
+  .\32xl\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 
   .\32xl\:px-3\.5 {
